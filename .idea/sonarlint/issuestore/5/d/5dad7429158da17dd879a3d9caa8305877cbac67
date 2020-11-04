@@ -1,0 +1,10 @@
+
+Q
+java:S1172"/Remove this unused method parameter "readData".(¹´üÿÿÿÿ8§–¹Ù.
+U
+java:S1118
+":Add a private constructor to hide the implicit public one.(Ø¡—æüÿÿÿÿ
+b
+java:S1144"@Remove this unused private "readDataByLittleEndianToInt" method.(¹´üÿÿÿÿ8ú¸Ù.
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(˜½‘8ÇÊ¿Ù.

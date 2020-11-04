@@ -1,26 +1,29 @@
-## í”„ë¡œê·¸ëž¨ ì„¤ëª…
-ë³¸ í”„ë¡œê·¸ëž¨ì€ ë¶„í• ëœ ì´ë¯¸ì§€ íŒŒì¼ ë°ì´í„°ë¥¼ ì¡°í•©í•˜ì—¬ ìž¬ì¡°í•©ëœ ì´ë¯¸ì§€íŒŒì¼ë¡œ ìƒì„±í•˜ëŠ” ê¸°ëŠ¥ì„ ìˆ˜í–‰í•œë‹¤. 
+## ÇÁ·Î±×·¥ ¼³¸í
+º» ÇÁ·Î±×·¥Àº ºÐÇÒµÈ ÀÌ¹ÌÁö ÆÄÀÏ µ¥ÀÌÅÍ¸¦ Á¶ÇÕÇÏ¿© ÀçÁ¶ÇÕµÈ ÀÌ¹ÌÁöÆÄÀÏ·Î »ý¼ºÇÏ´Â ±â´ÉÀ» ¼öÇàÇÑ´Ù. 
+ * »ç¿ë¾ð¾î: JAVA (jdk 1.8 ÀÌ»ó)
+ * °³¹ß IDE È¯°æ: IntelliJ
+ 
+## ÁÖ¿ä ±â´É
 
-## ì£¼ìš” ê¸°ëŠ¥
-
-### ì´ë¯¸ì§€ ë°ì´í„° ë¦¬ë” (ImageDataReader)
-1. ë¶„í• ëœ ì´ë¯¸ì§€ íŒŒì¼ì„ ì½ì–´ì„œ ImageData ê°ì²´ë¥¼ ë°˜í™˜í•œë‹¤.
+### ÀÌ¹ÌÁö µ¥ÀÌÅÍ ¸®´õ (ImageDataReader)
+1. ºÐÇÒµÈ ÀÌ¹ÌÁö ÆÄÀÏ(ÃÑ 62°³)À» ÀÐ¾î¼­ ImageData °´Ã¼¸¦ ¹ÝÈ¯ÇÑ´Ù.
+  - ºÐÇÒµÈ ÀÌ¹ÌÁö ÆÄÀÏ Æ÷¸äÀº "ÄÚµùÅ×½ºÆ®_ÆÄÀÏÆ÷¸Ë.pptx"¸¦ Âü°í
    
-### ë©”ì¸ í”„ë¡œê·¸ëž¨ 
-1. ì´ë¯¸ì§€ ë°ì´í„° ë¦¬ë”ì—ì„œ ì½ì€ ë¶„í• ëœ ì´ë¯¸ì§€ë¥¼ ìž¬ì¡°í•© í•˜ì—¬ ë³µêµ¬ëœ ì›ë³¸ ì´ë¯¸ì§€ë¥¼ íŒŒì¼ë¡œ ìƒì„±í•œë‹¤.
+### ¸ÞÀÎ ÇÁ·Î±×·¥ 
+1. ÀÌ¹ÌÁö µ¥ÀÌÅÍ ¸®´õ¿¡¼­ ÀÐÀº ºÐÇÒµÈ ÀÌ¹ÌÁö¸¦ ÀçÁ¶ÇÕ ÇÏ¿© º¹±¸µÈ ¿øº» ÀÌ¹ÌÁö¸¦ ÆÄÀÏ·Î »ý¼ºÇÑ´Ù.
    
-## ìž‘ì—… ì§„í–‰ íë¦„
-1. "Resource/Sample/" ê²½ë¡œì— ìœ„ì¹˜í•œ ë¶„í• ëœ ì´ë¯¸ì§€ íŒŒì¼ì„ ìˆœì°¨ì ìœ¼ë¡œ ì½ê¸°
-2. ì½ì€ ìžë£Œë¥¼ InageData ê°ì²´ë¡œ ìƒì„±
-3. ê° InageDataë¥¼ Sequence Numberì— ë§žê²Œ ìž¬ë°°ì¹˜í•˜ì—¬ Image Dataë¥¼ ë³‘í•©
-4. ë³‘í•©ëœ Image Dataë¥¼ ì´ë¯¸ì§€ íŒŒì¼ë¡œ ì €ìž¥
+## ÀÛ¾÷ ÁøÇà Èå¸§
+1. "Resource/Sample/" °æ·Î¿¡ À§Ä¡ÇÑ ºÐÇÒµÈ ÀÌ¹ÌÁö ÆÄÀÏÀ» ¼øÂ÷ÀûÀ¸·Î ÀÐ±â
+2. ÀÐÀº ÀÚ·á¸¦ InageData °´Ã¼·Î »ý¼º
+3. °¢ InageData¸¦ Sequence Number¿¡ ¸Â°Ô Àç¹èÄ¡ÇÏ¿© Image Data¸¦ º´ÇÕ
+4. º´ÇÕµÈ Image Data¸¦ ÀÌ¹ÌÁö ÆÄÀÏ·Î ÀúÀå
 
 
-## ì¶”ê°€ ì ìˆ˜ ë¶€ì—¬
-1. Unit Test Code ìž‘ì„±
-1. ë„¤íŠ¸ì›Œí¬ë¡œ ë¶„í• ëœ ì´ë¯¸ì§€ ë°ì´í„° ìˆ˜ì‹  ë° ì²˜ë¦¬ë¡œ ë³€ê²½ì„ ê³ ë ¤í•œ êµ¬ì¡° êµ¬ì„±
+## Ãß°¡ Á¡¼ö ºÎ¿©
+1. Unit Test Code ÀÛ¼º
+1. ³×Æ®¿öÅ©·Î ºÐÇÒµÈ ÀÌ¹ÌÁö µ¥ÀÌÅÍ ¼ö½Å ¹× Ã³¸®·Î º¯°æÀ» °í·ÁÇÑ ±¸Á¶ ±¸¼º
 
 
-## ìœ ì˜ ì‚¬í•­
-1. Open Source ë¥¼ ì´ìš©í•´ë„ ë¬´ê´€í•¨. ë‹¨, ì–´ë–¤ ì‹ìœ¼ë¡œ ë™ìž‘í•˜ëŠ” ê²ƒì¸ì§€ ì´í•´í•´ì•¼ í•˜ë©° ì§ˆë¬¸ ì‹œ, ì„¤ëª… ê°€ëŠ¥í•´ì•¼ í•¨
-1. ì§ˆë¬¸ì´ ìžˆì„ ì‹œ, gtl@satreci ìœ¼ë¡œ ë¬¸ì˜
+## À¯ÀÇ »çÇ×
+1. Open Source ¸¦ ÀÌ¿ëÇØµµ ¹«°üÇÔ. ´Ü, ¾î¶² ½ÄÀ¸·Î µ¿ÀÛÇÏ´Â °ÍÀÎÁö ÀÌÇØÇØ¾ß ÇÏ¸ç Áú¹® ½Ã, ¼³¸í °¡´ÉÇØ¾ß ÇÔ
+1. Áú¹®ÀÌ ÀÖÀ» ½Ã, gtl@satreci À¸·Î ¹®ÀÇ
