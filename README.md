@@ -14,8 +14,8 @@
    
 ## 작업 진행 흐름
 1. "Resource/Sample/" 경로에 위치한 분할된 이미지 파일을 순차적으로 읽기
-2. 읽은 자료를 InageData 객체로 생성
-3. 각 InageData를 Sequence Number에 맞게 재배치하여 Image Data를 병합
+2. 읽은 자료를 ImageData 객체로 생성
+3. 각 ImageData를 Sequence Number에 맞게 재배치하여 Image Data를 병합
 4. 병합된 Image Data를 이미지 파일로 저장
 
 
