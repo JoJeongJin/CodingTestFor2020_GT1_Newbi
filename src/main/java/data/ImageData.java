@@ -1,6 +1,6 @@
 package data;
 
-import com.esotericsoftware.kryo.io.Input;
+//import com.esotericsoftware.kryo.io.Input;
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -11,11 +11,11 @@ import java.io.IOException;
  */
 public class ImageData {
   public static final int SYNC = 0x1ACFFC1D;
-  private final ImageDataHeader imageDataHeader;
+  private final data.ImageDataHeader imageDataHeader;
   private final int[] imageData;
 
 
-  public ImageData(ImageDataHeader imageDataHeader, int[] imageData) {
+  public ImageData(data.ImageDataHeader imageDataHeader, int[] imageData) {
     this.imageDataHeader = imageDataHeader;
     this.imageData = imageData;
   }
@@ -24,7 +24,7 @@ public class ImageData {
     return imageData;
   }
 
-  public ImageDataHeader getImageDataHeader() {
+  public data.ImageDataHeader getImageDataHeader() {
     return imageDataHeader;
   }
 }
