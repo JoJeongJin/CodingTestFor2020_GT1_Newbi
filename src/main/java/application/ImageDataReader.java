@@ -36,10 +36,17 @@ public class ImageDataReader {
           temp[i] =  (byte)fin.read();//Data Length
       }
       DataLength = readDataByLittleEndianToInt(temp);
+      DataLength /=4;
 
       ImageData = new int[DataLength];
       for(int i=0; i<DataLength; i++){
-          ImageData[i] = (int)fin.read(); //ImageData array
+          byte[] tempByte = new byte[4];
+
+          for(int j=0; j<4; j++){
+              tempByte[j] = (byte)fin.read();
+          }
+
+          ImageData[i] = readDataByLittleEndianToInt(tempByte); //ImageData array
 
           //이 부분에서 버그가 날 수도 있으니 주의
       }
