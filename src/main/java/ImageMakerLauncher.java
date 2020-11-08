@@ -1,5 +1,7 @@
 import data.ImageData;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -46,5 +48,28 @@ public class ImageMakerLauncher {
 
       //병합된 Image Data(int[][] 배열이어 붙여진 것)을 이미지 파일로 저장 (이어진 imageData 배열을 그림으로 바꾸어 주고 저장)
       //write result (bmp, jpg, png or etc.)
+
+      int[][] resultImage = new int[fileLen][ID.get(0).getImageDataHeader().getDataLength()];
+      int ImageLen = ID.get(0).getImageDataHeader().getDataLength();
+
+      for(int i=0; i<fileLen; i++){
+        for(int j=0; j<ImageLen; j++){
+          int[] temp = ID.get(i).getImageData();
+          resultImage[i][j] = temp[j];
+        }
+      }
+
+    BufferedImage theImage = new BufferedImage(ImageLen, fileLen, BufferedImage.TYPE_INT_RGB);
+    for(int y = 0; y<fileLen; y++){
+      for(int x = 0; x<ImageLen; x++){
+        int value = resultImage[y][x] << 16 | resultImage[y][x] << 8 | resultImage[y][x];
+        theImage.setRGB(x, y, value);
+      }
+    }
+
+    File outputfile = new File("saved.bmp");
+    ImageIO.write(theImage, "png", outputfile);
+
+
   }
 }
