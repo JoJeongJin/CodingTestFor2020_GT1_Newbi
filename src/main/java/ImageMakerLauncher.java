@@ -67,7 +67,7 @@ public class ImageMakerLauncher {
       }
     }
 
-    File outputfile = new File("saved.bmp");
+    File outputfile = new File("./src/CodingTestFor2020_GT1_Newbi/output.bmp");
     ImageIO.write(theImage, "png", outputfile);
 
 
