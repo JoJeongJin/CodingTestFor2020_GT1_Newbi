@@ -1,5 +1,10 @@
+import data.ImageData;
+
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import static CodingTestFor2020_GT1_Newbi.src.main.java.application.ImageDataReader.readImageDataFile;
 
@@ -29,19 +34,17 @@ public class ImageMakerLauncher {
     System.out.println("---파일 리스트 출력 끝---");
     //processing
       //Image Data 객체 생성 (리스트 크기 만큼 ImageData 배열 만들기 ->
-      data.ImageData[] ID = new data.ImageData[fileLen];
+      List<ImageData> ID = new ArrayList<>();
 
       for(int i=0; i<fileLen; i++){
-        ID[i] = readImageDataFile(String.valueOf(fileList[i]));
+        ID.add(readImageDataFile(String.valueOf(fileList[i])));
       }
 
+      //각 생성된 Image Data 객체를 가지고 Sequence Number에 맞게 재배치하여 Image Data 병합 (Sequence Number에 맞게 정렬후에 각 Image Data가 가지고 있는 int[]배열을 이어 붙여주기
+      Collections.sort(ID);
+      System.out.println("정렬 완료");
 
-
-      //각 생성된 Image Data 객체를 가지고 Sequence Number에 맞게 재배치하여 Image Data 병합 (Sequence Number에 맞게 정렬후에 각 Image Data가 가지고 있는 int[]배열을 이어 붙여주기)
-
-      //병합된 Image Data(int[] 배열이어 붙여진 것)을 바이트 배열로 바꾸고 이미지 파일로 저장 (이어진 imageData 배열을 그림으로 바꾸어 주고 저장)
-
-
-    //write result (bmp, jpg, png or etc.)
+      //병합된 Image Data(int[][] 배열이어 붙여진 것)을 이미지 파일로 저장 (이어진 imageData 배열을 그림으로 바꾸어 주고 저장)
+      //write result (bmp, jpg, png or etc.)
   }
 }
