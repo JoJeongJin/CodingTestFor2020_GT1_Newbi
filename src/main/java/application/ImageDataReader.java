@@ -40,6 +40,8 @@ public class ImageDataReader {
       ImageData = new int[DataLength];
       for(int i=0; i<DataLength; i++){
           ImageData[i] = (int)fin.read(); //ImageData array
+
+          //이 부분에서 버그가 날 수도 있으니 주의
       }
 
       ImageDataHeader h = new ImageDataHeader(sequenceNumber, DataLength);
@@ -61,7 +63,7 @@ public class ImageDataReader {
           int temp = (int)readData[i];
           if(temp<0) temp+=256;
           sum += temp * multiple;
-          multiple *= 16;
+          multiple *= (16*16);
       }
 
       return sum;
