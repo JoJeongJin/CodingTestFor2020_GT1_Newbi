@@ -1,6 +1,6 @@
 # From https://github.com/github/gitignore/blob/master/Gradle.gitignore
 .gradle
-/build/
+/CodingTestFor2020_GT1_Newbi.build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -74,7 +74,7 @@ atlassian-ide-plugin.xml
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties
-crashlytics-build.properties
+crashlytics-CodingTestFor2020_GT1_Newbi.build.properties
 fabric.properties
 
 
